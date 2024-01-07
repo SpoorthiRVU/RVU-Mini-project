@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html>
+    <title>Food souq</title>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        h1{
+            font-weight:bolder;
+        }
+        .head1{
+            font-family:'Times New Roman', Times, serif;
+            color:white;
+            font-style:italic;
+            font-weight:bold;
+            font-size:150px;
+            text-align:center;
+        }
+        .p1{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color:white;
+            font-style:italic;
+            font-size:75px;
+            text-align:center;
+        }
+        .p2{
+            font-size:50px;
+            color:white;
+            font-family:'Times New Roman', Times, serif;
+            text-align:center;
+            font-weight:bold;
+        }
+        .b1{
+            background-image: url("https://images.squarespace-cdn.com/content/v1/5efefba860a8bf10f1b498b5/1594892108078-MN5IMVLOHFZOD8S8YZMB/Lychee-Oriental-Dining-Out-Glasgow-001.jpg?format=2500w");
+            background-size:cover;
+            background-position: center;
+            height:100vh;
+            width:100vw;
+            margin:0px;
+            padding:0px;
+           
+        }
+        .btn{
+            background-color:black;
+            color:white;
+            border-radius:8px;
+            margin:5px;
+            height:90px;
+            width:190px;
+            font-size:30px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .btn1{
+            background-color:black;
+            color:white;
+            border-radius:8px;
+            margin:5px;
+            height:70px;
+            width:150px;
+            font-size:30px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .b2{
+            background-image: url("https://img.freepik.com/premium-photo/bay-leaf-black-pepper-black-background-condiments-flat-view-space-text_350891-622.jpg?w=826");
+            background-size:cover;
+            background-position: center;
+            height:100vh;
+            width:100vw;
+            margin:0px;
+            padding:0px;
+        }
+        .img1{
+            border-radius:250px;
+            height:300px;
+            width:300px;
+            margin:20px;
+            padding:10px;
+        }
+        body{
+            align-items:center;
+            justify-content:center;
+        }
+        .img2{
+            border-radius:20px;
+            height:200px;
+            width:200px;
+            margin:30px;
+            padding:10px;
+        }
+        .card{
+            background-color:black;
+            color:white;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius:8px;
+            height:250px;
+            width:500px;
+            margin:10px;
+            padding:5px;
+        }
+        .p3{
+            font-size:15px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color:white;
+        }
+        .b3{
+            border-radius:3px;
+            background-color:rgba(35, 29, 29, 0.619);
+            color:white;
+            height:50px;
+            width:100px;
+            font-weight:bolder;
+            margin:8px;
+            padding:5px;
+        }
+        .bs{
+            background-image:url("https://img.freepik.com/free-photo/tortilla-wrap-with-falafel-fresh-salad-vegan-tacos-vegetarian-healthy-food-top-view_2829-14371.jpg?w=900&t=st=1702354922~exp=1702355522~hmac=59cea7d8e7a1b3bb41a5047038677f4504a3a6b36c70fc129948e0547f79791d");
+            background-size:cover;
+            color:white;
+            padding:8px;
+            font-size:20px;
+            font-family:'Times New Roman', Times, serif;
+            font-weight:bold;
+        }
+    </style>
+    <body>
+        <div id="section1" >
+            <div class="b1">
+                <div style="text-align:center">
+                    <h class="head1">Food Souq</h>
+                    <p class="p1" style="text-decoration:overline;">Make what makes you happy</p>
+                    <button class="btn" onclick="display('section2')">Get started</button>
+                </div>
+            </div>
+        </div>
+        <div id="section2">
+            <div class="b2">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="d-flex flex-column">
+                            <img src="https://images.unsplash.com/photo-1598449426314-8b02525e8733?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dmVnZXRhcmlhbiUyMGZvb2R8ZW58MHx8MHx8fDA%3D" class="img1" onclick="display('sectionv')"/>
+                            <p class="p2">VEG</p>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/9/23719/2f7cc3c36284dbf9aee7f4462fb207cb.jpg" class="img1" onclick="display('sectionn')"/>
+                            <p class="p2">NON-VEG</p>
+                       </div>
+                    </div>      
+                    <div class="d-flex flex-row justify-content-center">
+                        <button class="btn1" onclick="display('section1')" >Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sectionv" >
+            <div class="d-flex flex-row justify-content-center" style="background-color:lightgrey;">
+                <div class="d-flex flex-column">
+                    <div class="d-flex flex-row">
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://ourplantbasedworld.com/wp-content/uploads/2021/03/IMG_7324-1200x1200-1.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h3>FALAFEL</h3>
+                                    <p class="p3">Crispy, crunchy falafel are a savory vegan snack that everyone loves. They are terrific to eat by themselves, to serve with sauces to dip.</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectiona')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="data:image/jpeg;base64,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" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h4>HARA BHARA KEBAB</h4>
+                                    <p class="p3">Hara Bhara Kabab is a very popular snack of North Indian fried patties made with spinach, peas and potatoes.</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionb')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://www.gimmesomeoven.com/wp-content/uploads/2020/04/Fattoush-Salad-Recipe-6-2.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h3>FATTOUSH SALAD</h3>
+                                    <p class="p3">Middle Eastern chopped salad w/ lots of fresh herbs and pita chips for croutons. Covered in a zesty lime vinaigrette</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionc')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://www.archanaskitchen.com/images/archanaskitchen/0-Archanas-Kitchen-Recipes/2020/FATAYER_BI_JIBNEH_Middle_Eastern_CHEESE_PIES__10.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h3>FATAYER JEBNEH</h3>
+                                    <p class="p3">Fatayer jebneh are boat-shaped cheese “pies” that are a popular traditional snack in many Arabic speaking countries</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectiond')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://www.cookinwithmima.com/wp-content/uploads/2021/04/zaatar-manaeesh-773x1024.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h3>ZAATAR MANAKEESH</h3>
+                                    <p class="p3">Zaatar Manakeesh is a Mediterranean flatbread that's made with dough and zaatar spice.</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectione')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://cdn.foodaciously.com/static/recipes/9cfe9be3-56c4-4d8d-a3b5-773650099fbe/lebanese-lentil-soup-316210d6e237033aeeb03bf4e779692d-2560-q60.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h3>LENTIL SOUP</h3>
+                                    <p class="p3">Arabic lentil soup is made with hearty vegetables and brown lentils simmered with warm spices.</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionf')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://spicecravings.com/wp-content/uploads/2020/10/Paneer-Tikka-1.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h1>PANEER TIKKA</h1>
+                                    <p class="p3">Paneer Tikka prepared from marinating paneer chunks with spices and yogurt and grilled in a tandoori. </p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3"onclick="display('sectiong')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTCEij0SqR8kKyGNXH8I4cPMSDot9LjPF7YA&usqp=CAU" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h1>MOUSAKKA</h1>
+                                    <p class="p3">A flavourful dish with layers of eggplant, potatoes, and a delicious vegetable filling, topped with a creamy béchamel sauce.</p>
+                           
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionh')">DIVE IN</button>
+                               
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://feelgoodfoodie.net/wp-content/uploads/2020/09/Molokhia-10-640x960.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h1>MOLOKHIA</h1>
+                                    <p class="p3">Dish made from the leaves of Corchorus olitorius, commonly known in English as jute mallow.</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectioni')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://www.thedeliciouscrescent.com/wp-content/uploads/2021/10/Koshari-3.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h1>KOSHARI</h1>
+                                    <p class="p3">Egyptian comfort bowl of lentils, rice, chickpeas, with a special tomato sauce and savory crispy onions on top!</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionj')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://i2.wp.com/www.mybigfathalalblog.com/wp-content/uploads/2018/06/52a32632-f211-41e2-b072-a3111d11c8f5.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h1>OM ALI</h1>
+                                    <p class="p3">Unique dessert with a combination of nuts, puff pastry and milk</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionk')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://plantbasedarab.com/wp-content/uploads/2023/08/Vegan-Turkish-Coffee-Cake-Plant-Based-Arab-scaled.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h4>TURKISH COFFEE CAKE</h4>
+                                    <p class="p3">Dates is layered with a deliciously soaked cardamom sponge, a luscious mascarpone filling and sweetened dates</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionl')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+           
+           
+            <div class="d-flex flex-row justify-content-center" style="background-color:lightgrey;">
+                <button class="btn1" onclick="display('section2')" >Back</button>
+            </div>
+        </div>
+        </div>
+        <div id="sectionn" >
+            <div class="d-flex flex-row justify-content-center" style="background-color:lightgrey;">
+                <div class="d-flex flex-column">
+                    <div class="d-flex flex-row">
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://i.pinimg.com/originals/e5/29/62/e52962a290ebfa296b0c4aca76f5d7bb.png" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h1>SHAWARMA</h1>
+                                    <p class="p3">Tender pieces of marinated chicken are roasted and stuffed into flatbreads with garlic aioli</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionm')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://placeswego.com/wp-content/uploads/2015/11/Mansaf-Chicken-2.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h2>CHICKEN MANSAF</h2>
+                                    <p class="p3">Traditional Jordanian dish made of chicken cooked in a sauce of fermented dried yogurt and served with rice or bulgur.</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionmm')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://www.saveur.com/uploads/2019/02/08/GG4TS7RE3O7XBRYPKGQ2RLS3NY-e1630714905711.jpg?auto=webp&auto=webp&optimize=high&quality=70&width=1440" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h3>CHICKEN KEBABS</h3>
+                                    <p class="p3">Marinated in a blend of yogurt, lemon, garlic and spices, then grilled until golden</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectiono')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://www.themediterraneandish.com/wp-content/uploads/2017/05/Lebanese-Chicken-Fatteh-Dinner-Bowls-Recipe-The-Mediterranean-Dish-4.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h1>FATTEH</h1>
+                                    <p class="p3">Dish of rice, chicken, garlicky yogurt, crispy pita bread and toasted nuts</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionp')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://www.simplyleb.com/wp-content/uploads/Lebanese-Chicken-and-Rice-Soup-20.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h4>ARABIC CHICKEN AND RICE SOUP</h4>
+                                    <p class="p3">This Lebanese-inspired Chicken and Rice Soup is so hearty, comforting, and perfect for these cold winter months</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionq')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://live.staticflickr.com/65535/50268617132_cb87ac7b46_b.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h4>HARISSA SKEWERS</h4>
+                                    <p class="p3">These harissa chicken skewers are loaded with flavor thanks to fresh veggies and traditional Moroccan spices.</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionr')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://foreignfork.com/wp-content/uploads/2023/06/Maqluba-FEATURE.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h1>MAQLUBA</h1>
+                                    <p class="p3">Seasoned rice, baked vegetables like cauliflower, potatoes, eggplant, and tender pieces of lamb</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3"onclick="display('sections')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="data:image/jpeg;base64,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" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h3>SAMAK HARRA</h3>
+                                    <p class="p3">Featuring grilled or baked fish, typically whole or in fillets, topped with a flavorful spicy sauce.</p>
+                           
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectiont')">DIVE IN</button>
+                               
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://everylittlecrumb.com/wp-content/uploads/sayadieh-7.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h1>SAYADIEH</h1>
+                                    <p class="p3">Middle Eastern fish and rice dish made with warm spices, caramelized onions, and fried white fish.</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionu')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://jamilghar.com/wp-content/uploads/2023/07/Al-Faham-Chicken11-scaled.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h1>AL-FAHAM</h1>
+                                    <p class="p3">Smoky grilled chicken with aromatic Middle Eastern spices for a dish perfect for gatherings or backyard barbecues.</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionuu')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://feelgoodfoodie.net/wp-content/uploads/2018/10/Shakshuka-09.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h1>SHAHSHUKA</h1>
+                                    <p class="p3">Shakshuka is a North African and Middle Eastern meal of poached eggs in a simmering tomato sauce with spices</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionw')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="d-flex flex-row">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bf/Ful_medames_%28arabic_meal%29.jpg" class="img2"/>
+                                <div class="d-flex flex-column">
+                                    <h3>FOUL MEDAMES</h3>
+                                    <p class="p3">Stewed fava beans (or broad beans), typically seasoned with a little ground cumin.</p>
+                                   
+                                    <div class="d-flex flex-row justify-content-center">
+                                        <button class="b3" onclick="display('sectionx')">DIVE IN</button>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+           
+           
+            <div class="d-flex flex-row justify-content-center" style="background-color:lightgrey;">
+                <button class="btn1" onclick="display('section2')" >Back</button>
+            </div>
+        </div>
+        </div>
+
+
+
+       
+        <div id="sectiona">
+            <div class="bs">
+                <h1>Vegan Falafel Recipe</h1>
+                <p>Enjoy this delicious and easy-to-make vegan falafel at home!</p>
+                <h2>Ingredients:</h2>
+                <ul>
+                    <li>1 cup dried chickpeas, soaked overnight</li>
+                    <li>1/2 large onion, roughly chopped (about 1 cup)</li>
+                    <li>2 cloves of garlic</li>
+                    <li>3 tablespoons fresh parsley, chopped</li>
+                    <li>1 teaspoon coriander</li>
+                    <li>1 teaspoon cumin</li>
+                    <li>1/2 teaspoon baking powder</li>
+                    <li>4 tablespoons flour (use chickpea flour or all-purpose flour)</li>
+                    <li>Salt and pepper to taste</li>
+                    <li>Oil for frying</li>
+                </ul>
+           
+                <h2>Instructions:</h2>
+                <ol>
+                    <li>Soak the chickpeas in water overnight.</li>
+                    <li>Drain and rinse the chickpeas.</li>
+                    <li>Combine chickpeas, onion, garlic, parsley, coriander, cumin, baking powder, flour, salt, and pepper in a food processor.</li>
+                    <li>Blend until the mixture has a coarse texture and holds together.</li>
+                    <li>Form small patties from the mixture.</li>
+                    <li>Heat oil in a skillet and fry the falafel until golden brown on both sides.</li>
+                    <li>Remove falafel from the oil and drain excess oil on paper towels.</li>
+                    <li>Serve warm and enjoy!</li>
+                </ol>
+                <button class="btn1" onclick="display('sectionv')" >Back</button>
+            </div>
+        </div>
+        <div id="sectionb">
+            <div class="bs">
+                <h1>Hara Bhara Kebab Recipe</h1>
+
+    <p>Enjoy these delicious and healthy Hara Bhara Kebabs!</p>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>2 cups boiled and mashed potatoes</li>
+        <li>1 cup boiled and mashed green peas</li>
+        <li>1 cup finely chopped spinach</li>
+        <li>1/2 cup bread crumbs</li>
+        <li>1/4 cup finely chopped coriander leaves</li>
+        <li>1/4 cup finely chopped mint leaves</li>
+        <li>1 tablespoon ginger-garlic paste</li>
+        <li>1 teaspoon cumin powder</li>
+        <li>1 teaspoon garam masala</li>
+        <li>Salt to taste</li>
+        <li>Oil for frying</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>Mix all the ingredients in a bowl.</li>
+        <li>Shape the mixture into small, flat, round kebabs.</li>
+        <li>Heat oil in a pan for frying.</li>
+        <li>Fry the kebabs until golden brown on both sides.</li>
+        <li>Serve hot with your favorite chutney or sauce.</li>
+    </ol>
+
+    <p>Enjoy your homemade Hara Bhara Kebabs!</p>
+                <button class="btn1" onclick="display('sectionv')" >Back</button>
+            </div>
+        </div>
+        <div id="sectionc">
+            <div class="bs">
+                <h1>Fattoush Salad Recipe</h1>
+
+    <p>Enjoy the refreshing flavors of Fattoush Salad!</p>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>2 cups mixed salad greens (lettuce, arugula, and radicchio)</li>
+        <li>1 cup cherry tomatoes, halved</li>
+        <li>1 cucumber, diced</li>
+        <li>1 red bell pepper, chopped</li>
+        <li>1/2 red onion, thinly sliced</li>
+        <li>1 cup chopped fresh parsley</li>
+        <li>1 cup chopped fresh mint</li>
+        <li>1 cup pita bread, toasted and broken into pieces</li>
+    </ul>
+
+    <h2>For the Dressing:</h2>
+    <ul>
+        <li>1/4 cup extra virgin olive oil</li>
+        <li>2 tablespoons fresh lemon juice</li>
+        <li>1 teaspoon sumac</li>
+        <li>1 teaspoon ground cumin</li>
+        <li>Salt and pepper to taste</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>In a large bowl, combine all the salad ingredients.</li>
+        <li>In a small bowl, whisk together the dressing ingredients.</li>
+        <li>Pour the dressing over the salad and toss to combine.</li>
+        <li>Top the salad with toasted pita pieces just before serving.</li>
+        <li>Serve immediately and enjoy your Fattoush Salad!</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionv')" >Back</button>
+            </div>
+        </div>
+        <div id="sectiond">
+            <div class="bs">
+                <h1>Veg Fatayer Jebnah Recipe</h1>
+
+    <p>Enjoy the savory goodness of Veg Fatayer Jebnah!</p>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>2 cups all-purpose flour</li>
+        <li>1 tablespoon active dry yeast</li>
+        <li>1 tablespoon sugar</li>
+        <li>1/2 cup warm water</li>
+        <li>1/4 cup olive oil</li>
+        <li>1 teaspoon salt</li>
+        <li>1 cup mixed vegetables (bell peppers, tomatoes, onions, etc.), finely chopped</li>
+        <li>1 cup feta cheese, crumbled</li>
+        <li>1/4 cup chopped fresh parsley</li>
+        <li>1 teaspoon ground cumin</li>
+        <li>Salt and pepper to taste</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>In a bowl, dissolve yeast and sugar in warm water. Let it sit for 5-10 minutes until frothy.</li>
+        <li>In a large bowl, combine flour, olive oil, salt, and the yeast mixture. Knead until you get a smooth dough.</li>
+        <li>Cover the dough and let it rise in a warm place for about 1 hour or until it doubles in size.</li>
+        <li>Preheat the oven to 375°F (190°C).</li>
+        <li>In a separate bowl, mix together chopped vegetables, feta cheese, parsley, cumin, salt, and pepper.</li>
+        <li>Divide the dough into small balls. Roll each ball into a circle and place a spoonful of the vegetable-cheese mixture in the center.</li>
+        <li>Fold the edges of the dough to form a triangular shape, pinching the edges to seal.</li>
+        <li>Place the filled triangles on a baking sheet and bake for 15-20 minutes or until golden brown.</li>
+        <li>Remove from the oven, let them cool slightly, and serve your Veg Fatayer Jebnah!</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionv')" >Back</button>
+            </div>
+        </div>
+        <div id="sectione">
+            <div class="bs">
+                <h1>Zaatar Manakeesh Recipe</h1>
+
+    <p>Enjoy the flavorful Veg Zaatar Manakeesh, a perfect blend of herbs and spices!</p>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>2 cups all-purpose flour</li>
+        <li>1 tablespoon active dry yeast</li>
+        <li>1 tablespoon sugar</li>
+        <li>1/2 cup warm water</li>
+        <li>1/4 cup olive oil</li>
+        <li>1 teaspoon salt</li>
+        <li>3 tablespoons zaatar spice mix</li>
+        <li>1/4 cup olive oil (for the zaatar topping)</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>In a bowl, dissolve yeast and sugar in warm water. Let it sit for 5-10 minutes until frothy.</li>
+        <li>In a large bowl, combine flour, olive oil, salt, and the yeast mixture. Knead until you get a smooth dough.</li>
+        <li>Cover the dough and let it rise in a warm place for about 1 hour or until it doubles in size.</li>
+        <li>Preheat the oven to 425°F (220°C).</li>
+        <li>Punch down the risen dough and divide it into small balls.</li>
+        <li>Roll each ball into a flat circle and place it on a baking sheet.</li>
+        <li>Mix zaatar spice with olive oil and spread it evenly on top of each dough circle.</li>
+        <li>Bake in the preheated oven for 12-15 minutes or until the edges are golden brown.</li>
+        <li>Remove from the oven, let it cool slightly, and enjoy your Veg Zaatar Manakeesh!</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionv')" >Back</button>
+            </div>
+        </div>
+        <div id="sectionf">
+            <div class="bs">
+                <h1>Arabic Lentil Soup Recipe</h1>
+
+    <p>Enjoy the comforting warmth of Arabic Lentil Soup!</p>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>1 cup red lentils, rinsed and drained</li>
+        <li>1 onion, finely chopped</li>
+        <li>3 cloves garlic, minced</li>
+        <li>1 carrot, diced</li>
+        <li>1 celery stalk, diced</li>
+        <li>1 teaspoon ground cumin</li>
+        <li>1 teaspoon ground coriander</li>
+        <li>1/2 teaspoon turmeric</li>
+        <li>6 cups vegetable broth</li>
+        <li>Salt and pepper to taste</li>
+        <li>Juice of 1 lemon</li>
+        <li>2 tablespoons olive oil</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>In a large pot, heat olive oil over medium heat. Add chopped onions and garlic; sauté until softened.</li>
+        <li>Add carrots and celery to the pot; cook for a few minutes until they start to soften.</li>
+        <li>Rinse lentils and add them to the pot. Stir in cumin, coriander, turmeric, salt, and pepper.</li>
+        <li>Pour in the vegetable or chicken broth. Bring the soup to a boil, then reduce heat and let it simmer until lentils are tender (about 20-25 minutes).</li>
+        <li>Using an immersion blender, blend the soup until smooth. Alternatively, blend in batches in a regular blender and return to the pot.</li>
+        <li>Squeeze in the lemon juice and adjust salt and pepper to taste.</li>
+        <li>Serve hot and enjoy your Arabic Lentil Soup!</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionv')" >Back</button>
+            </div>
+        </div>
+        <div id="sectiong">
+            <div class="bs">
+                <h1>Paneer Tikka Recipe</h1>
+
+                <p>Enjoy the delicious flavors of homemade Paneer Tikka!</p>
+           
+                <h2>Ingredients:</h2>
+                <ul>
+                    <li>250g paneer (cottage cheese), cut into cubes</li>
+                    <li>1 cup thick yogurt</li>
+                    <li>1 tablespoon ginger-garlic paste</li>
+                    <li>1 tablespoon red chili powder</li>
+                    <li>1 tablespoon turmeric powder</li>
+                    <li>1 tablespoon garam masala</li>
+                    <li>1 tablespoon chaat masala</li>
+                    <li>1 tablespoon lemon juice</li>
+                    <li>Salt to taste</li>
+                    <li>2 tablespoons vegetable oil</li>
+                    <li>1 onion, sliced into rings</li>
+                    <li>1 bell pepper, sliced</li>
+                    <li>Skewers for grilling</li>
+                </ul>
+           
+                <h2>Instructions:</h2>
+                <ol>
+                    <li>In a bowl, mix yogurt, ginger-garlic paste, red chili powder, turmeric powder, garam masala, chaat masala, lemon juice, salt, and vegetable oil to make the marinade.</li>
+                    <li>Add paneer cubes to the marinade, ensuring they are well-coated. Let it marinate for at least 2 hours, preferably overnight in the refrigerator.</li>
+                    <li>Preheat the grill or oven to medium-high heat.</li>
+                    <li>Thread marinated paneer cubes, onion rings, and bell pepper slices onto skewers.</li>
+                    <li>Grill the skewers for 10-15 minutes, turning occasionally until the paneer is golden brown and cooked through.</li>
+                    <li>Serve hot with mint chutney and enjoy your homemade Paneer Tikka!</li>
+                </ol>
+                <button class="btn1" onclick="display('sectionv')" >Back</button>
+            </div>
+        </div>
+        <div id="sectionh">
+            <div class="bs">
+                <h1>Vegetarian Moussaka Recipe</h1>
+
+    <p>Indulge in the rich flavors of Vegetarian Moussaka!</p>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>2 large eggplants, sliced</li>
+        <li>2 large potatoes, peeled and sliced</li>
+        <li>1 onion, finely chopped</li>
+        <li>3 cloves garlic, minced</li>
+        <li>1 zucchini, diced</li>
+        <li>1 red bell pepper, diced</li>
+        <li>1 yellow bell pepper, diced</li>
+        <li>1 can (14 oz) crushed tomatoes</li>
+        <li>1 teaspoon dried oregano</li>
+        <li>1 teaspoon dried basil</li>
+        <li>1/2 teaspoon ground cinnamon</li>
+        <li>Salt and pepper to taste</li>
+        <li>4 tablespoons olive oil</li>
+        <li>For the Béchamel Sauce:</li>
+        <li>4 tablespoons unsalted butter</li>
+        <li>1/4 cup all-purpose flour</li>
+        <li>2 cups milk</li>
+        <li>Salt and nutmeg to taste</li>
+        <li>1 cup shredded mozzarella cheese (optional)</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>Preheat the oven to 375°F (190°C).</li>
+        <li>Brush eggplant and potato slices with olive oil and roast them in the oven until golden brown.</li>
+        <li>In a pan, sauté onions and garlic until softened. Add zucchini and bell peppers, cooking until vegetables are tender.</li>
+        <li>Stir in crushed tomatoes, oregano, basil, cinnamon, salt, and pepper. Simmer for 15-20 minutes.</li>
+        <li>For the Béchamel sauce, melt butter in a saucepan, whisk in flour until smooth, then gradually add milk. Stir continuously until the sauce thickens. Season with salt and nutmeg. Remove from heat and let it cool slightly.</li>
+        <li>Layer half of the roasted eggplant and potato slices in a baking dish, followed by the vegetable mixture. Repeat the layers, finishing with a layer of vegetables.</li>
+        <li>Pour the Béchamel sauce over the layers. If desired, sprinkle shredded mozzarella on top.</li>
+        <li>Bake in the preheated oven for 30-40 minutes or until golden brown.</li>
+        <li>Remove from the oven, let it cool slightly, and enjoy your Vegetarian Moussaka!</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionv')" >Back</button>
+            </div>
+        </div>
+        <div id="sectioni">
+            <div class="bs">
+                <h1>Veg Molokhia Recipe</h1>
+
+                <p>Enjoy the rich and flavorful Veg Molokhia!</p>
+           
+                <h2>Ingredients:</h2>
+                <ul>
+                    <li>2 cups chopped Jew's mallow leaves (fresh or frozen)</li>
+                    <li>2 tablespoons olive oil</li>
+                    <li>1 onion, finely chopped</li>
+                    <li>3 cloves garlic, minced</li>
+                    <li>1 carrot, diced</li>
+                    <li>1 potato, peeled and diced</li>
+                    <li>1 zucchini, diced</li>
+                    <li>1 can (14 oz) crushed tomatoes</li>
+                    <li>1 teaspoon ground coriander</li>
+                    <li>1 teaspoon ground cumin</li>
+                    <li>1 teaspoon paprika</li>
+                    <li>Salt and pepper to taste</li>
+                    <li>4 cups vegetable broth</li>
+                    <li>Cooked rice or bread for serving</li>
+                </ul>
+           
+                <h2>Instructions:</h2>
+                <ol>
+                    <li>In a large pot, heat olive oil over medium heat. Add chopped onions and garlic; sauté until softened.</li>
+                    <li>Add carrots, potatoes, and zucchini to the pot; cook for a few minutes until they start to soften.</li>
+                    <li>Add crushed tomatoes, ground coriander, ground cumin, paprika, salt, and pepper. Stir well.</li>
+                    <li>Add Jew's mallow leaves to the pot and stir until they wilt.</li>
+                    <li>Pour in the vegetable broth and bring the mixture to a boil. Reduce heat and let it simmer for 20-25 minutes until the vegetables are tender.</li>
+                    <li>Adjust seasoning to taste and serve the Veg Molokhia over cooked rice or with bread.</li>
+                    <li>Enjoy your Veg Molokhia!</li>
+                </ol>
+                <button class="btn1" onclick="display('sectionv')" >Back</button>
+            </div>
+        </div>
+        <div id="sectionj">
+            <div class="bs">
+                <h1>Veg Koshari Recipe</h1>
+
+    <p>Enjoy the hearty and flavorful Veg Koshari!</p>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>1 cup basmati rice, washed</li>
+        <li>1 cup brown lentils, washed</li>
+        <li>1 cup short pasta (macaroni or penne)</li>
+        <li>1 onion, finely chopped</li>
+        <li>3 cloves garlic, minced</li>
+        <li>2 tablespoons vegetable oil</li>
+        <li>1 can (14 oz) crushed tomatoes</li>
+        <li>1 teaspoon ground cumin</li>
+        <li>1 teaspoon ground coriander</li>
+        <li>1 teaspoon paprika</li>
+        <li>1/2 teaspoon cayenne pepper (optional)</li>
+        <li>Salt and pepper to taste</li>
+        <li>For the Topping:</li>
+        <li>Fried onions</li>
+        <li>Chopped fresh parsley</li>
+        <li>Garlic-infused vinegar (optional)</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>Cook basmati rice and brown lentils separately according to package instructions. Drain and set aside.</li>
+        <li>Cook the pasta according to package instructions. Drain and set aside.</li>
+        <li>In a large pan, sauté chopped onions and minced garlic in vegetable oil until softened.</li>
+        <li>Add crushed tomatoes, ground cumin, ground coriander, paprika, cayenne pepper (if using), salt, and pepper to the pan. Simmer for 15-20 minutes.</li>
+        <li>Layer the cooked rice, lentils, and pasta in a serving dish. Pour the tomato sauce over the layers.</li>
+        <li>Top with fried onions and chopped fresh parsley.</li>
+        <li>Optionally, drizzle garlic-infused vinegar on top for extra flavor.</li>
+        <li>Serve hot and enjoy your Veg Koshari!</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionv')" >Back</button>
+            </div>
+        </div>
+        <div id="sectionk">
+            <div class="bs">
+                <h1>Om Ali Recipe</h1>
+
+    <p>Indulge in the sweet and comforting flavors of Om Ali!</p>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>4 sheets of puff pastry, baked and broken into pieces</li>
+        <li>4 cups whole milk</li>
+        <li>1 cup sugar</li>
+        <li>1 cup mixed nuts (almonds, pistachios, and hazelnuts), chopped</li>
+        <li>1/2 cup shredded coconut</li>
+        <li>1 teaspoon vanilla extract</li>
+        <li>Whipped cream or vanilla ice cream for serving (optional)</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>Preheat the oven to 350°F (180°C).</li>
+        <li>Bake the puff pastry sheets according to the package instructions. Once baked, break them into bite-sized pieces.</li>
+        <li>In a saucepan, heat the milk over medium heat until it's warm. Add sugar and vanilla extract, stirring until the sugar dissolves.</li>
+        <li>In a baking dish, layer half of the broken puff pastry pieces.</li>
+        <li>Sprinkle half of the chopped nuts and shredded coconut over the pastry layer.</li>
+        <li>Pour half of the warm milk mixture over the layers, ensuring the puff pastry absorbs the liquid.</li>
+        <li>Repeat the layers with the remaining puff pastry, nuts, coconut, and milk mixture.</li>
+        <li>Bake in the preheated oven for 20-25 minutes or until the top is golden brown and the dessert is bubbly.</li>
+        <li>Remove from the oven, let it cool slightly, and serve Om Ali warm. Optionally, top with whipped cream or vanilla ice cream.</li>
+        <li>Enjoy your sweet treat!</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionv')" >Back</button>
+            </div>
+        </div>
+        <div id="sectionl">
+            <div class="bs">
+                <h1>Turkish Coffee Cake Recipe</h1>
+
+                <p>Indulge in the exotic flavors of Turkish Coffee with this delightful cake!</p>
+           
+                <h2>Ingredients:</h2>
+                <ul>
+                    <li>2 cups all-purpose flour</li>
+                    <li>1 cup granulated sugar</li>
+                    <li>1/2 cup unsalted butter, softened</li>
+                    <li>1/2 cup Greek yogurt</li>
+                    <li>1/4 cup strong brewed Turkish coffee, cooled</li>
+                    <li>2 eggs</li>
+                    <li>1 teaspoon baking powder</li>
+                    <li>1/2 teaspoon baking soda</li>
+                    <li>1/2 teaspoon ground cardamom</li>
+                    <li>1/4 teaspoon ground cinnamon</li>
+                    <li>Pinch of salt</li>
+                    <li>For the Coffee Glaze:</li>
+                    <li>1 cup powdered sugar</li>
+                    <li>2 tablespoons strong brewed Turkish coffee, cooled</li>
+                    <li>Chopped pistachios for garnish (optional)</li>
+                </ul>
+           
+                <h2>Instructions:</h2>
+                <ol>
+                    <li>Preheat the oven to 350°F (180°C). Grease and flour a cake pan.</li>
+                    <li>In a large bowl, cream together the softened butter and sugar until light and fluffy.</li>
+                    <li>Add eggs one at a time, beating well after each addition. Stir in the Greek yogurt and brewed Turkish coffee.</li>
+                    <li>In a separate bowl, whisk together the flour, baking powder, baking soda, cardamom, cinnamon, and salt.</li>
+                    <li>Add the dry ingredients to the wet ingredients, mixing until just combined.</li>
+                    <li>Pour the batter into the prepared cake pan and smooth the top.</li>
+                    <li>Bake in the preheated oven for 25-30 minutes or until a toothpick inserted into the center comes out clean.</li>
+                    <li>While the cake is cooling, prepare the coffee glaze by whisking together powdered sugar and brewed Turkish coffee until smooth.</li>
+                    <li>Once the cake has cooled, drizzle the coffee glaze over the top and garnish with chopped pistachios if desired.</li>
+                    <li>Slice and enjoy your delicious Turkish Coffee Cake!</li>
+                </ol>
+           
+                <button class="btn1" onclick="display('sectionv')" >Back</button>
+            </div>
+        </div>
+        </div>
+        <div id="sectionm">
+           
+            <div class="bs">
+                <h1>Chicken Shawarma Recipe</h1>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>500g boneless chicken thighs, thinly sliced</li>
+        <li>1 large onion, thinly sliced</li>
+        <li>3 cloves garlic, minced</li>
+        <li>1 teaspoon ground cumin</li>
+        <li>1 teaspoon ground coriander</li>
+        <li>1 teaspoon smoked paprika</li>
+        <li>1 teaspoon ground turmeric</li>
+        <li>1 teaspoon ground cinnamon</li>
+        <li>Salt and pepper to taste</li>
+        <li>2 tablespoons plain yogurt</li>
+        <li>3 tablespoons olive oil</li>
+        <li>Juice of 1 lemon</li>
+        <li>Flatbreads or pita for serving</li>
+        <li>Toppings: Chopped tomatoes, cucumbers, lettuce, tahini sauce</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>In a bowl, mix together the sliced chicken, sliced onion, minced garlic, cumin, coriander, paprika, turmeric, cinnamon, salt, and pepper.</li>
+        <li>Add the yogurt, olive oil, and lemon juice to the chicken mixture. Mix well, ensuring the chicken is coated with the spices and marinade. Cover and refrigerate for at least 2 hours, or overnight for best results.</li>
+        <li>Heat a skillet or grill pan over medium-high heat. Cook the marinated chicken until fully cooked and slightly crispy on the edges.</li>
+        <li>Warm the flatbreads or pita and assemble the shawarma by placing the cooked chicken on the bread. Add your favorite toppings and drizzle with tahini sauce.</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionn')" >Back</button>
+            </div>
+        </div>
+        <div id="sectionmm">
+            <div class="bs">
+                <h1>Chicken Mansaf Recipe</h1>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>1 whole chicken, cut into pieces</li>
+        <li>2 cups plain yogurt</li>
+        <li>1/2 cup ghee or clarified butter</li>
+        <li>2 cups rice</li>
+        <li>1/2 cup pine nuts, toasted</li>
+        <li>1 large onion, finely chopped</li>
+        <li>5 cups water</li>
+        <li>Salt and pepper to taste</li>
+        <li>1 teaspoon ground cinnamon</li>
+        <li>1 teaspoon ground cardamom</li>
+        <li>1 teaspoon ground allspice</li>
+        <li>Chopped fresh parsley for garnish</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>In a large pot, combine the chicken pieces, yogurt, ghee, chopped onion, water, salt, pepper, cinnamon, cardamom, and allspice. Bring to a boil, then reduce the heat and simmer until the chicken is tender (about 1.5 to 2 hours).</li>
+        <li>In a separate pot, cook the rice according to package instructions.</li>
+        <li>Once the chicken is cooked, remove it from the pot and set aside. Keep the cooking liquid.</li>
+        <li>In a large serving dish, arrange the cooked rice. Place the chicken pieces on top.</li>
+        <li>Pour some of the cooking liquid over the rice and chicken. Reserve the rest of the liquid to serve on the side.</li>
+        <li>Toast the pine nuts in a pan until golden brown and sprinkle them over the chicken and rice.</li>
+        <li>Garnish with chopped parsley and serve hot. Serve the remaining cooking liquid on the side for drizzling as desired.</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionn')" >Back</button>
+            </div>
+        </div>
+        <div id="sectiono">
+            <div class="bs">
+                <h1>Chicken Kebabs Recipe</h1>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>1 kg boneless chicken, cut into cubes</li>
+        <li>1/4 cup plain yogurt</li>
+        <li>2 tablespoons olive oil</li>
+        <li>2 teaspoons ground cumin</li>
+        <li>2 teaspoons paprika</li>
+        <li>1 teaspoon ground coriander</li>
+        <li>Salt and pepper to taste</li>
+        <li>Wooden skewers, soaked in water</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>In a bowl, mix yogurt, olive oil, cumin, paprika, coriander, salt, and pepper.</li>
+        <li>Marinate the chicken cubes in the mixture for at least 1 hour.</li>
+        <li>Thread the marinated chicken onto the soaked skewers.</li>
+        <li>Grill or bake the chicken kebabs until fully cooked, turning occasionally.</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionn')" >Back</button>
+            </div>
+        </div>
+        <div id="sectionp">
+            <div class="bs">
+                <h1>Chicken Fatteh Recipe</h1>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>500g cooked chicken, shredded</li>
+        <li>2 cups plain yogurt</li>
+        <li>2 cloves garlic, minced</li>
+        <li>Salt to taste</li>
+        <li>2 cups toasted Arabic bread, torn into pieces</li>
+        <li>1 cup cooked chickpeas</li>
+        <li>Pine nuts and chopped parsley for garnish</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>Mix yogurt with minced garlic and salt.</li>
+        <li>In a serving dish, layer toasted bread, shredded chicken, and cooked chickpeas.</li>
+        <li>Pour the yogurt mixture over the layers.</li>
+        <li>Garnish with pine nuts and chopped parsley.</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionn')" >Back</button>
+            </div>
+        </div>
+        <div id="sectionq">
+            <div class="bs">
+                <h1>Arabic Chicken and Rice Soup Recipe</h1>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>1 kg chicken pieces</li>
+        <li>1 cup rice</li>
+        <li>1 onion, finely chopped</li>
+        <li>2 carrots, diced</li>
+        <li>2 celery stalks, chopped</li>
+        <li>1/2 cup chopped fresh dill</li>
+        <li>1/4 cup lemon juice</li>
+        <li>Salt and pepper to taste</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>In a large pot, combine chicken pieces, rice, chopped onion, carrots, and celery.</li>
+        <li>Add enough water to cover the ingredients and bring to a boil.</li>
+        <li>Simmer until the chicken is cooked, and rice is tender.</li>
+        <li>Stir in chopped dill and lemon juice. Season with salt and pepper.</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionn')" >Back</button>
+            </div>
+        </div>
+        <div id="sectionr">
+            <div class="bs">
+                <h1>Harissa Chicken Skewers Recipe</h1>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>1 kg boneless chicken, cut into cubes</li>
+        <li>3 tablespoons harissa paste</li>
+        <li>2 tablespoons olive oil</li>
+        <li>1 teaspoon ground cumin</li>
+        <li>1 teaspoon ground coriander</li>
+        <li>Salt and pepper to taste</li>
+        <li>Wooden skewers, soaked in water</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>In a bowl, mix harissa paste, olive oil, cumin, coriander, salt, and pepper.</li>
+        <li>Marinate the chicken cubes in the mixture for at least 1 hour.</li>
+        <li>Thread the marinated chicken onto the soaked skewers.</li>
+        <li>Grill or bake the chicken skewers until fully cooked, turning occasionally.</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionn')" >Back</button>
+            </div>
+        </div>
+        <div id="sections">
+            <div class="bs">
+                <h1>Chicken Maqluba Recipe</h1>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>1.5 kg chicken, cut into pieces</li>
+        <li>2 cups basmati rice, soaked</li>
+        <li>1 large eggplant, sliced</li>
+        <li>2 large potatoes, sliced</li>
+        <li>2 large tomatoes, sliced</li>
+        <li>1 large onion, sliced</li>
+        <li>1/2 cup pine nuts, toasted</li>
+        <li>1 teaspoon ground cinnamon</li>
+        <li>1 teaspoon ground cumin</li>
+        <li>1 teaspoon ground allspice</li>
+        <li>Salt and pepper to taste</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>Cook the chicken pieces with sliced onions until the chicken is tender.</li>
+        <li>In a deep pot, layer soaked rice, sliced eggplant, potatoes, tomatoes, and cooked chicken.</li>
+        <li>Sprinkle ground cinnamon, cumin, allspice, salt, and pepper between the layers.</li>
+        <li>Add enough water to cover the ingredients and simmer until the rice is fully cooked.</li>
+        <li>Invert the pot onto a large serving dish, so the rice is on the bottom and the chicken and vegetables are on top.</li>
+        <li>Garnish with toasted pine nuts.</li>
+    </ol>
+
+                <button class="btn1" onclick="display('sectionn')" >Back</button>
+            </div>
+        </div>
+        <div id="sectiont">
+            <div class="bs">
+                <h1>Samak Harra Recipe</h1>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>1 kg whole fish (such as sea bass or snapper), cleaned and scaled</li>
+        <li>1/4 cup olive oil</li>
+        <li>4 cloves garlic, minced</li>
+        <li>1 teaspoon ground coriander</li>
+        <li>1 teaspoon ground cumin</li>
+        <li>1 teaspoon paprika</li>
+        <li>1/2 teaspoon cayenne pepper (adjust to taste)</li>
+        <li>1 cup chopped tomatoes</li>
+        <li>1/2 cup chopped cilantro</li>
+        <li>1/2 cup chopped parsley</li>
+        <li>Juice of 1 lemon</li>
+        <li>Salt and pepper to taste</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>Preheat the oven to 375°F (190°C).</li>
+        <li>Rinse the fish and pat it dry. Make three diagonal cuts on each side.</li>
+        <li>In a bowl, mix olive oil, minced garlic, coriander, cumin, paprika, cayenne pepper, salt, and pepper.</li>
+        <li>Rub the fish with the spice mixture, making sure to get into the cuts.</li>
+        <li>Place the fish in a baking dish. Pour any remaining spice mixture over the top.</li>
+        <li>In a separate bowl, combine chopped tomatoes, cilantro, parsley, and lemon juice. Spoon the mixture over the fish.</li>
+        <li>Bake in the preheated oven for 25-30 minutes or until the fish is cooked through.</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionn')" >Back</button>
+            </div>
+        </div>
+        <div id="sectionu">
+            <div class="bs">
+                <h1>Sayadieh Recipe</h1>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>1 kg white fish fillets (such as cod or haddock)</li>
+        <li>2 cups basmati rice, rinsed and soaked</li>
+        <li>1/2 cup vegetable oil</li>
+        <li>2 large onions, thinly sliced</li>
+        <li>4 cups fish or vegetable broth</li>
+        <li>1/2 teaspoon ground cinnamon</li>
+        <li>1/2 teaspoon ground cumin</li>
+        <li>1/2 teaspoon ground turmeric</li>
+        <li>Salt and pepper to taste</li>
+        <li>Chopped fresh parsley for garnish</li>
+        <li>Fried almonds for garnish (optional)</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>In a large pot, heat vegetable oil over medium heat. Add sliced onions and cook until golden brown and caramelized. Remove half of the onions and set aside for garnish.</li>
+        <li>Add rice to the pot with the remaining onions, and sauté for a few minutes until the rice is coated with oil.</li>
+        <li>Add fish fillets to the pot, placing them on top of the rice.</li>
+        <li>In a bowl, mix fish or vegetable broth with cinnamon, cumin, turmeric, salt, and pepper. Pour the mixture over the fish and rice.</li>
+        <li>Bring to a boil, then reduce heat to low, cover, and simmer until the rice is cooked and the fish is flaky (about 15-20 minutes).</li>
+        <li>Garnish with the reserved caramelized onions, chopped parsley, and fried almonds if desired.</li>
+    </ol>
+
+                <button class="btn1" onclick="display('sectionn')" >Back</button>
+            </div>
+        </div>
+        <div id="sectionuu">
+            <div class="bs">
+                <h1>Al Faham Chicken Recipe</h1>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>1 whole chicken, cleaned and cut into pieces</li>
+        <li>Marinade:</li>
+        <li>   - 1/4 cup yogurt</li>
+        <li>   - 2 tablespoons olive oil</li>
+        <li>   - 2 tablespoons lemon juice</li>
+        <li>   - 3 cloves garlic, minced</li>
+        <li>   - 1 tablespoon ground coriander</li>
+        <li>   - 1 tablespoon ground cumin</li>
+        <li>   - 1 teaspoon paprika</li>
+        <li>   - 1 teaspoon ground turmeric</li>
+        <li>   - Salt and pepper to taste</li>
+        <li>   - Chopped fresh cilantro for garnish</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>In a bowl, mix together all the marinade ingredients.</li>
+        <li>Coat the chicken pieces with the marinade, making sure each piece is well covered. Marinate for at least 2 hours, or overnight for best results.</li>
+        <li>Preheat the grill to medium-high heat.</li>
+        <li>Grill the marinated chicken pieces until fully cooked, turning occasionally for even cooking. This usually takes about 20-30 minutes.</li>
+        <li>Garnish with chopped cilantro and serve hot.</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionn')" >Back</button>
+            </div>
+        </div>
+        <div id="sectionw">
+            <div class="bs">
+                <h1>Shakshuka Recipe</h1>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>4 large eggs</li>
+        <li>1 tablespoon olive oil</li>
+        <li>1 onion, finely chopped</li>
+        <li>1 red bell pepper, diced</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 can (400g) crushed tomatoes</li>
+        <li>1 teaspoon ground cumin</li>
+        <li>1 teaspoon paprika</li>
+        <li>1/2 teaspoon cayenne pepper (adjust to taste)</li>
+        <li>Salt and pepper to taste</li>
+        <li>Chopped fresh parsley for garnish</li>
+        <li>Feta cheese for topping (optional)</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>Heat olive oil in a skillet over medium heat. Add chopped onion and sauté until softened.</li>
+        <li>Add diced bell pepper and minced garlic. Cook until the vegetables are tender.</li>
+        <li>Pour in the crushed tomatoes and add cumin, paprika, cayenne pepper, salt, and pepper. Simmer for about 10-15 minutes until the sauce thickens.</li>
+        <li>Create small wells in the sauce and crack eggs into them.</li>
+        <li>Cover the skillet and let the eggs poach in the sauce for about 5-7 minutes or until the egg whites are set but the yolks are still runny.</li>
+        <li>Garnish with chopped parsley and feta cheese. Serve hot with crusty bread.</li>
+    </ol>
+
+                <button class="btn1" onclick="display('sectionn')" >Back</button>
+            </div>
+        </div>
+        <div id="sectionx">
+            <div class="bs">
+                <h1>Foul Medames Recipe</h1>
+
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>2 cups cooked fava beans</li>
+        <li>4 eggs</li>
+        <li>2 cloves garlic, minced</li>
+        <li>1 tomato, diced</li>
+        <li>1/4 cup olive oil</li>
+        <li>Juice of 1 lemon</li>
+        <li>Salt and pepper to taste</li>
+        <li>Chopped fresh parsley for garnish</li>
+        <li>Optional toppings: Chopped green onions, radishes, tahini</li>
+    </ul>
+
+    <h2>Instructions:</h2>
+    <ol>
+        <li>In a saucepan, heat olive oil over medium heat. Add minced garlic and sauté until fragrant.</li>
+        <li>Add cooked fava beans and diced tomatoes to the saucepan. Cook for a few minutes until heated through.</li>
+        <li>In a separate pan, fry the eggs to your liking.</li>
+        <li>Mash the fava bean mixture slightly with a fork, leaving some beans whole.</li>
+        <li>Season with salt, pepper, and lemon juice to taste.</li>
+        <li>Serve the fava bean mixture in bowls, topped with fried eggs.</li>
+        <li>Garnish with chopped parsley and add optional toppings if desired. Serve with pita bread.</li>
+    </ol>
+                <button class="btn1" onclick="display('sectionn')" >Back</button>
+            </div>
+        </div>
+        <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+ 
+    </body>
+       
+</html>
